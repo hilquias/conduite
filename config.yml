@@ -1,0 +1,17 @@
+database:
+
+  driverClass: org.hsqldb.jdbc.JDBCDriver
+
+  user: sa
+
+  url: jdbc:hsqldb:./instance/master
+
+  validationQuery: SELECT * FROM INFORMATION_SCHEMA.SYSTEM_TABLES
+
+logging:
+
+  level: INFO
+
+  loggers:
+
+    com.example: DEBUG
