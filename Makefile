@@ -6,10 +6,14 @@ $(TARGET):
 run:
 		java -jar $(TARGET) server config.yml
 
+test:
+		mvn test
+
 clean:
 		mvn clean
 
 db-migrate:
-		java -jar $(TARGET) db migrate config.yml 
+		java -jar $(TARGET) db migrate config.yml
 
-.PHONY: run clean db-migrate
+
+.PHONY: run test clean db-migrate
